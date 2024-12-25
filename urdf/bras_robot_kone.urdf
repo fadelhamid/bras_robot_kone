@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="bras_robot_kone">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.0439390916743305 -0.00824743509828847 0.0750001368355614"
+        rpy="0 0 0" />
+      <mass
+        value="1.15616260183108" />
+      <inertia
+        ixx="0.00201252660466385"
+        ixy="-5.8438931416233E-11"
+        ixz="1.15648471368964E-09"
+        iyy="0.00254071599730866"
+        iyz="-9.25832832736018E-10"
+        izz="0.00201252366056206" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://bras_robot_kone/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://bras_robot_kone/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="link_1">
+    <inertial>
+      <origin
+        xyz="9.5659E-09 0.039149 0.0038439"
+        rpy="0 0 0" />
+      <mass
+        value="0.28935" />
+      <inertia
+        ixx="0.00023422"
+        ixy="-1.0009E-10"
+        ixz="2.0647E-11"
+        iyy="0.00017347"
+        iyz="-3.0518E-06"
+        izz="0.00021948" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://bras_robot_kone/meshes/link_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://bras_robot_kone/meshes/link_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint0"
+    type="revolute">
+    <origin
+      xyz="-0.043939 -0.075 0.075658"
+      rpy="1.5708 0 1.3043" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_1" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="10"
+      velocity="100" />
+  </joint>
+  <link
+    name="link_2">
+    <inertial>
+      <origin
+        xyz="8.34342925870035E-05 0.0769787595950562 0.0538201340542464"
+        rpy="0 0 0" />
+      <mass
+        value="0.531525792797543" />
+      <inertia
+        ixx="0.000822412462538042"
+        ixy="1.39247444822011E-06"
+        ixz="1.55000044635215E-07"
+        iyy="0.000760729569554385"
+        iyz="-3.26751554577163E-06"
+        izz="0.000292449808175617" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://bras_robot_kone/meshes/link_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://bras_robot_kone/meshes/link_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint1"
+    type="revolute">
+    <origin
+      xyz="0 0.04 -5.8078E-05"
+      rpy="1.5708 0 2.7264" />
+    <parent
+      link="link_1" />
+    <child
+      link="link_2" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="10"
+      velocity="100" />
+  </joint>
+  <link
+    name="link_3">
+    <inertial>
+      <origin
+        xyz="-2.89029345595937E-08 -0.000850596578764497 -0.0247256137255674"
+        rpy="0 0 0" />
+      <mass
+        value="0.289351762040261" />
+      <inertia
+        ixx="0.000234216447081535"
+        ixy="-5.98058295798293E-11"
+        ixz="1.91233596903565E-10"
+        iyy="0.000173473233080135"
+        iyz="-3.05181286103565E-06"
+        izz="0.000219481360816377" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://bras_robot_kone/meshes/link_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://bras_robot_kone/meshes/link_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint2"
+    type="revolute">
+    <origin
+      xyz="0 0.077558 0.19843"
+      rpy="3.1416 0 -3.1413" />
+    <parent
+      link="link_2" />
+    <child
+      link="link_3" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="10"
+      velocity="100" />
+  </joint>
+  <link
+    name="link_4">
+    <inertial>
+      <origin
+        xyz="-0.00011374804438774 0.0794500615122035 0.0538200978032225"
+        rpy="0 0 0" />
+      <mass
+        value="0.531525635812206" />
+      <inertia
+        ixx="0.000821556909968414"
+        ixy="-1.41818793373474E-06"
+        ixz="-2.10686341073608E-07"
+        iyy="0.00076158499157125"
+        iyz="-3.21304441990138E-06"
+        izz="0.00029244979601376" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://bras_robot_kone/meshes/link_4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://bras_robot_kone/meshes/link_4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint3"
+    type="revolute">
+    <origin
+      xyz="0 0 -0.02857"
+      rpy="0 -1.5319 3.1416" />
+    <parent
+      link="link_3" />
+    <child
+      link="link_4" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="10"
+      velocity="100" />
+  </joint>
+  <link
+    name="link_5">
+    <inertial>
+      <origin
+        xyz="-4.1059633526519E-08 -0.000850601291387747 -0.0541529386337137"
+        rpy="0 0 0" />
+      <mass
+        value="0.289351749229268" />
+      <inertia
+        ixx="0.000234216384386858"
+        ixy="-4.78890426222438E-11"
+        ixz="2.73709200906947E-10"
+        iyy="0.000173473229383543"
+        iyz="-3.05179274938782E-06"
+        izz="0.00021948137519761" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://bras_robot_kone/meshes/link_5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://bras_robot_kone/meshes/link_5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint4"
+    type="revolute">
+    <origin
+      xyz="0 0.08 0.169"
+      rpy="3.1416 0 -3.1077" />
+    <parent
+      link="link_4" />
+    <child
+      link="link_5" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="10"
+      velocity="100" />
+  </joint>
+  <link
+    name="link_6">
+    <inertial>
+      <origin
+        xyz="-9.23239243388885E-09 0.0574851727391662 0.00384389168769794"
+        rpy="0 0 0" />
+      <mass
+        value="0.289351691131219" />
+      <inertia
+        ixx="0.000234216290285249"
+        ixy="-7.37676111296456E-11"
+        ixz="1.44917021535385E-10"
+        iyy="0.000173473229114033"
+        iyz="-3.05178713869868E-06"
+        izz="0.000219481393743955" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://bras_robot_kone/meshes/link_6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://bras_robot_kone/meshes/link_6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint5"
+    type="revolute">
+    <origin
+      xyz="0 -0.021664 -0.057997"
+      rpy="3.1416 0.93581 0" />
+    <parent
+      link="link_5" />
+    <child
+      link="link_6" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="10"
+      velocity="100" />
+  </joint>
+  <link
+    name="link_7">
+    <inertial>
+      <origin
+        xyz="0.000436939179346119 0.0354522271076708 -1.91362098493214E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.0578450079932328" />
+      <inertia
+        ixx="1.70796857755802E-05"
+        ixy="1.29077723312545E-07"
+        ixz="5.19691863842035E-08"
+        iyy="1.58193070964861E-05"
+        iyz="-7.85937467836642E-09"
+        izz="1.82717508213123E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://bras_robot_kone/meshes/link_7.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://bras_robot_kone/meshes/link_7.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint6"
+    type="revolute">
+    <origin
+      xyz="0 0.058336 0.019746"
+      rpy="1.5708 0 0.43758" />
+    <parent
+      link="link_6" />
+    <child
+      link="link_7" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="10"
+      velocity="100" />
+  </joint>
+  <link
+    name="end_effector">
+    <inertial>
+      <origin
+        xyz="-1.798E-05 -0.00029364 0.029821"
+        rpy="0 0 0" />
+      <mass
+        value="0.11609" />
+      <inertia
+        ixx="5.0618E-05"
+        ixy="-2.1286E-07"
+        ixz="3.1576E-09"
+        iyy="0.00027059"
+        iyz="-3.8798E-09"
+        izz="0.00031792" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://bras_robot_kone/meshes/end_effector.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://bras_robot_kone/meshes/end_effector.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="end_effector_joint"
+    type="revolute">
+    <origin
+      xyz="0 0.05 0"
+      rpy="1.5708 -1.2062 -3.1416" />
+    <parent
+      link="link_7" />
+    <child
+      link="end_effector" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+</robot>
